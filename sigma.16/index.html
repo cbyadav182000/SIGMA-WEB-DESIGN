@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+         /* this specificity of this selector is 1 */
+         h1.yello{
+            color: #ffff00;
+         }
+       
+        /* this specificity of this selector is 10 */
+        .yellow{
+            color: rgb(156, 237, 16);
+        }
+
+        /* this specificity of this selector is 10 */ 
+        .cred{
+            color: rgb(100, 16, 173);
+        }
+        
+        /* this specificity of this selector is 10 */
+        .cpurple{
+            color: red;
+        }
+
+        /*this is example of attribute and  this specificity of this selector is 10*/
+
+        /* [data-x="a"]{
+            background-color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <h1 style="color: rgb(8, 219, 33);" class="yello cred cpurple">css specificity</h1> -->
+        <!-- or -->
+        <h1 class="yello cred cpurple" data-x="a">css specificity</h1>
+    </div>
+    
+</body>
+</html>

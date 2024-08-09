@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        :root{
+            --color:rgb(173, 184, 174);
+            --selector:rgba(175, 78, 183, 0.948);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color:var(--selector);
+            width: 400px;
+        }
+        .nav{
+            background-color:var(--color);
+            width: 400px;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+            margin: 25px;
+        }
+        ul li:first-child{
+            background-color: rgb(181, 32, 59);
+            color: azure;
+            border: 3px solid black;
+        }
+
+        ul li:nth-child(2){
+            background-color: rgb(32, 181, 117);
+            color:white;
+            border: 3px solid black;
+        }
+        ul li:nth-child(3){
+            background-color: rgb(77, 32, 181);
+            color: aliceblue;
+            border: 3px solid rgb(202, 24, 24);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate iste mollitia nulla debitis aspernatur a
+        adipisci tempore deserunt ipsum, placeat laborum. Nulla minus animi eum.
+    </div>
+
+</body>
+
+</html>
