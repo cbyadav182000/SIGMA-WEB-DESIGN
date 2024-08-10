@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transforms MasterClass</title>\>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(29, 88, 183);
+            border: 2px solid rgb(186, 15, 15);
+            /* transform: rotate(0.5turn); */
+            /* transform: rotate(40deg); */
+            /* transform: scale(1.6); */
+            /* transform: skew(35deg); */
+            transform: translateY(54%) skew(40deg) translateX(30%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> box</div>
+    </div>
+    
+</body>
+</html>
